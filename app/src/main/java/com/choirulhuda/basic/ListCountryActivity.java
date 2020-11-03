@@ -18,7 +18,7 @@ public class ListCountryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_country);
-        getSupportActionBar().setTitle("Daftar Nama Negara");
+        getSupportActionBar().setTitle("Daftar Negara");
 
         lvCountryName = findViewById(R.id.lv_country_name);
 
@@ -38,11 +38,11 @@ public class ListCountryActivity extends AppCompatActivity {
             }
         });
 
-        lvCountryName.setOnLongClickListener(new View.OnLongClickListener() {
+        lvCountryName.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onLongClick(View view) {
-                Toast.makeText(getApplicationContext(), "Long klik berhasil!", Toast.LENGTH_SHORT).show();
-                return true;
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), "Long klik pada item ke-"+i, Toast.LENGTH_SHORT).show();
+                return false;
             }
         });
     }

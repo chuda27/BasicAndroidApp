@@ -36,18 +36,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.img_list_country:
-                Toast.makeText(this, "Aplikasi Tampil Daftar Negara", Toast.LENGTH_SHORT).show();
+                Intent listCountry = new Intent(this, ListCountryActivity.class);
+                startActivity(listCountry);
                 break;
-
-            /*case R.id.img_calculate:
-                Toast.makeText(this, "Aplikasi Kalkulator", Toast.LENGTH_SHORT).show();
-                break;  */
-
         }
     }
 
 
     public void actionCalculator(View view) {
-        Toast.makeText(this, "Aplikasi Kalkulator", Toast.LENGTH_SHORT).show();
+        Intent calculator = new Intent(this, CalculatorActivity.class);
+        startActivity(calculator);
     }
 }

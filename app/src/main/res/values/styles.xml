@@ -1,0 +1,34 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/rubik_semibolditalic</item>
+        <item name="android:textViewStyle">@style/RubikRegularTextView</item>
+        <item name="android:buttonStyle">@style/RubikRegular</item>
+    </style>
+
+    <!--global font button-->
+    <style name="RubikRegular" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <!--global font text view-->
+    <style name="RubikRegularTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+
+    <!--font on action bar-->
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="android:Widget.ActionBar">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/rubik_semibolditalic</item>
+    </style>
+
+
+
+
+
+</resources>

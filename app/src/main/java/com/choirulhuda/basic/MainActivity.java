@@ -47,4 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent calculator = new Intent(this, CalculatorActivity.class);
         startActivity(calculator);
     }
+
+    public void actionRegister(View view) {
+        Intent register = new Intent(this, RegisterActivity.class);
+        startActivity(register);
+    }
 }

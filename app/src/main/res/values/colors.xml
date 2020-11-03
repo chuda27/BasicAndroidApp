@@ -15,4 +15,9 @@
     <color name="colorOptional1">#023047</color>
     <color name="colorOptional2">#ffb703</color>
     <color name="colorOptional3">#8ecae6</color>
+    <color name="colorOptional4">#59bb00</color>
+    <color name="colorOptional5">#c6ff54</color>
+    <color name="colorOptional6">#90ee02</color>
+    <color name="colorButton1">#006e8c</color>
+    <color name="colorButton2">#64ceef</color>
 </resources>

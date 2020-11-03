@@ -20,7 +20,7 @@ public class ShowNameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_name);
 
-        getActionBar().setTitle("Tampil Nama");
+        getSupportActionBar().setTitle("Tampil Nama");
 
         edtInputName = findViewById(R.id.edt_input_name);
         btnShowName = findViewById(R.id.btn_show_name);

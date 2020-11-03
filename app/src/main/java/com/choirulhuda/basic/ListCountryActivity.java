@@ -42,7 +42,7 @@ public class ListCountryActivity extends AppCompatActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(getApplicationContext(), "Long klik pada item ke-"+i, Toast.LENGTH_SHORT).show();
-                return false;
+                return true;
             }
         });
     }

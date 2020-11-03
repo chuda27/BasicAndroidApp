@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:fontFamily">@font/rubik_semibolditalic</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
         <item name="android:textViewStyle">@style/RubikRegularTextView</item>
         <item name="android:buttonStyle">@style/RubikRegular</item>
     </style>
@@ -15,11 +15,9 @@
         <item name="android:fontFamily">@font/rubik_regular</item>
     </style>
 
-    <!--global font text view-->
     <style name="RubikRegularTextView" parent="android:Widget.TextView">
         <item name="android:fontFamily">@font/rubik_regular</item>
     </style>
-
 
     <!--font on action bar-->
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="android:Widget.ActionBar">

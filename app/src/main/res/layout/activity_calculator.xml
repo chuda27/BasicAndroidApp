@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".CalculatorActivity">
 
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tombol 2"
+        android:onClick="actionButton2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show"
+        app:layout_constraintStart_toStartOf="@+id/btn_show"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show" />
 </androidx.constraintlayout.widget.ConstraintLayout>

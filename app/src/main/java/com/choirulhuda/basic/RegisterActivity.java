@@ -69,6 +69,15 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+        edtBDate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if (!edtBDate.getText().toString().isEmpty()) {
+                    edtBDate.setError(null);
+                }
+            }
+        });
+
         edtPersonName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
@@ -100,36 +109,33 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void actionSubmit(View view) {
         boolean isAllComplete = true;
+        StringBuilder sb = new StringBuilder();
 
         if (edtPersonName.getText().toString().equals("")){
             edtPersonName.requestFocus();
             edtPersonName.setError("Harus diisi!");
-            isAllComplete = false;
-        } else
-            isAllComplete = true;
+            sb.append("a");
+        }
 
         if (edtEmail.getText().toString().equals("")){
             edtEmail.requestFocus();
             edtEmail.setError("Harus diisi!");
-            isAllComplete = false;
-        } else
-            isAllComplete = true;
+            sb.append("b");
+        }
 
         if (edtPhone.getText().toString().equals("")){
             edtPhone.requestFocus();
             edtPhone.setError("Harus diisi!");
-            isAllComplete = false;
-        } else
-            isAllComplete = true;
+            sb.append("c");
+        }
 
         if (edtBDate.getText().toString().equals("")){
             edtBDate.requestFocus();
-            isAllComplete = false;
-        } else{
-            isAllComplete = true;
-        }
+            sb.append("d");
+        } else
+            edtBDate.setError(null);
 
-        if (isAllComplete) {
+        if (sb.length() == 0) {
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
             dialogBuilder.setTitle("Pesan");
             dialogBuilder.setMessage("Data berhasil disimpan!")
@@ -147,7 +153,7 @@ public class RegisterActivity extends AppCompatActivity {
             alertDialog.show();
         } else {
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-            dialogBuilder.setTitle("Error");
+            dialogBuilder.setTitle("Warning");
             dialogBuilder.setMessage("Lengkapi data!")
                     .setIcon(R.drawable.ic_reg_user)
                     .setCancelable(false)

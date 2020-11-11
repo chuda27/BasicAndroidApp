@@ -34,7 +34,8 @@ public class ListCountryActivity extends AppCompatActivity {
         lvCountryName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), "Nama negara: "+countryName[i], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Nama negara: "+countryName[i],
+                        Toast.LENGTH_SHORT).show();
             }
         });
 

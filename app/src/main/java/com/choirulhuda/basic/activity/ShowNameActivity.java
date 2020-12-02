@@ -1,4 +1,4 @@
-package com.choirulhuda.basic;
+package com.choirulhuda.basic.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.choirulhuda.basic.R;
 
 public class ShowNameActivity extends AppCompatActivity {
 

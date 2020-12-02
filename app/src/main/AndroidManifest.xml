@@ -8,17 +8,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+        <activity
+            android:name=".activity.LoginActivity"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".activity.RegisterActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ListCountryActivity"
+            android:name=".activity.CalculatorActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ShowNameActivity"
+            android:name=".activity.ListCountryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity.ShowNameActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"

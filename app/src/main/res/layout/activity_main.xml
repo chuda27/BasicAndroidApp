@@ -68,4 +68,24 @@
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/ic_reg_user" />
 
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionLogin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/ic_login" />
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/ic_logout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

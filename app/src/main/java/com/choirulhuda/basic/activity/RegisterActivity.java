@@ -1,4 +1,4 @@
-package com.choirulhuda.basic;
+package com.choirulhuda.basic.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.choirulhuda.basic.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
